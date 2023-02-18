@@ -10,14 +10,9 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: [
-        "**/*.css",
-        "**/*.js",
-        "**/*.html",
-        "**/*.png",
-        "**/*.svg",
-        "**/*.ico",
-      ],
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+      },
     }),
   ],
   resolve: {
