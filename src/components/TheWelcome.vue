@@ -57,9 +57,14 @@ import Icon from "./Icon.vue";
     </template>
     <template #heading>What's next?</template>
     <ul>
-      <li>Get PWA to work (why doesn't it out of the box?)</li>
-      <li><s>Make ServiceWorker support history router</s> already does</li>
-      <li>Use LocalStorage or LocalDB with Pinia</li>
+      <li><s>Get PWA to work (why doesn't it out of the box?)</s><br>
+      - Done, I accidentally deleted the `public` directory</li>
+      <li><s>Make ServiceWorker support history router</s><br>
+      - Done, it already does out of the box :-)</li>
+      <li>Use LocalStorage or LocalDB with Pinia<br>
+      - Optional, but nice to have</li>
+      <li>Make VitePress-compatible for rich blogs?<br>
+      - Also optional, but would rid me of Wordpress, which is nice</li>
     </ul>
   </WelcomeItem>
 </template>
