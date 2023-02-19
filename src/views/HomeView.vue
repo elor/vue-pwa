@@ -4,7 +4,6 @@ import TheWelcome from "../components/TheWelcome.vue";
 
 <template>
   <main>
-    <h2>This is left over from bootstrapping:</h2>
     <TheWelcome />
   </main>
 </template>
