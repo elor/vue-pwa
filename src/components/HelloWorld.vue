@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import { useOnlineStore } from '@/stores/online'
+import { useOnlineStore } from "@/stores/online";
 
 defineProps<{
   msg: string;
 }>();
 
 const online = useOnlineStore();
-
 </script>
 
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      This project is hosted statically on Github Pages, after being built from Vue/TS sources with Github Actions.
-      It features online/offline detection and a pinia store.
-      <br>
-      Since the server doesn't redirect arbitrary subpaths to index.html, a hash router should be used.
+      This project is hosted statically on Github Pages, after being built from
+      Vue/TS sources with Github Actions. It features online/offline detection,
+      a pinia store (instead of vuex), and a vue history router.
+      <br />
+      An install button for the PWA would be nice, but that's left to future me.
     </h3>
-    <br>
-    <h3>You are {{ online.online ? 'Online' : 'Offline' }}</h3>
+    <br />
+    <h3>You are {{ online.online ? "Online" : "Offline" }}</h3>
   </div>
 </template>
 
@@ -40,7 +40,6 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-
   .greetings h1,
   .greetings h3 {
     text-align: left;
