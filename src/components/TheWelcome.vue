@@ -84,6 +84,7 @@ import FaIcon from "./FaIcon.vue";
         <s>Make ServiceWorker support history router</s><br />
         - Done, it already does out of the box :-)
       </li>
+      <li>Notify about outstanding ServiceWorker updates</li>
       <li>Make a nice install button for the PWA</li>
       <li>
         Use LocalStorage or LocalDB with Pinia<br />
