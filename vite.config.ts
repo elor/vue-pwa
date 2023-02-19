@@ -14,6 +14,29 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
         skipWaiting: true,
       },
+      manifest: {
+        name: "Vue PWA",
+        short_name: "Vue PWA",
+        description: "A self-aware offline-first statically hosted PWA",
+        theme_color: "#ffffff",
+        icons: [
+          {
+            src: "assets/icon-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "assets/icon-144x144.png",
+            sizes: "144x144",
+            type: "image/png",
+          },
+          {
+            src: "assets/icon-96x96.png",
+            sizes: "96x96",
+            type: "image/png",
+          },
+        ],
+      },
     }),
   ],
   resolve: {
