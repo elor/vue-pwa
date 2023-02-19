@@ -5,7 +5,6 @@ export const useOnlineStore = defineStore("online", () => {
   const online = ref(navigator.onLine);
 
   function updateFromNavigator() {
-    console.log("navigator.onLine", navigator.onLine);
     online.value = navigator.onLine;
   }
 

@@ -7,8 +7,6 @@ defineProps<{
 
 const online = useOnlineStore();
 
-console.log('HelloWorld.vue: online', online);
-
 </script>
 
 <template>
