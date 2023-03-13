@@ -2,6 +2,8 @@
 
 Just trying to get Github Actions to deploy a Vue project with PWA support to Gitub Pages.
 
+See it in action: <https://elor.github.io/vue-pwa/> 
+
 This project was bootstrapped using `npm create vue@3`, extended with vite-pwa, and all html5 build artifacts registered as precache objects.
 
 ## Project Setup
